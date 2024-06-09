@@ -3,16 +3,16 @@
 
 | TERM      | T1 (Algebra / Poetry)               | T2 (Analysis / Anthropology) |
 | --------- | ----------------------------------- | ---------------------------- |
-| *break*   | *Tensegrity & Vocoder*              | *Rust & Ruin*                |
-| Summer 24 | [[Theory of Computation]]           | [[Numerics]]                 |
-| Fall 24   | [[Abstract Linear Algebra]]         | [[Real Analysis]]            |
-| Winter 25 | [[Modern Algebra I]]                | [[Functional Analysis I]]    |
-| Spring 25 | [[Modern Algebra II]]               | [[Functional Analysis II]]   |
-| Summer 25 | [[Modern Algebra III]]              | [[Topology]]                 |
-| Fall 25   | [[Automata Theory]]                 | [[Dynamical Systems I]]      |
-| Winter 26 | [[Universal Algebra and Coalgebra]] | [[Dynamical Systems II]]     |
-| Spring 26 | [[Sheaf Theory]]                    | [[Multiagent Systems I]]     |
-| Summer 26 | [[Category Theory]]                 | [[Multiagent Systems II]]    |
+| *break*   | *Tensegrity*              | *Rust & Ruin v0.2 update*                |
+| Summer 24 | Theory of Computation           | Numerics                 |
+| Fall 24   | Abstract Linear Algebra         | Real Analysis            |
+| Winter 25 | Modern Algebra I                | Functional Analysis I    |
+| Spring 25 | Modern Algebra II               | Functional Analysis II   |
+| Summer 25 | Modern Algebra III              | Topology                 |
+| Fall 25   | Automata Theory                 | Dynamical Systems I      |
+| Winter 26 | Universal Algebra and Coalgebra | Dynamical Systems II     |
+| Spring 26 | Sheaf Theory                    | Multiagent Systems I     |
+| Summer 26 | Category Theory                 | Multiagent Systems II    |
 
 # Schedule and Guidelines
 - Schedule
