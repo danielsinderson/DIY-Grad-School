@@ -36,4 +36,4 @@ My ultimate aim is to contribute to application research and pedagogy rather tha
 	- Final Assessment for each class will incorporate one or two of the following:
 		- A one hour exam covering terminology and simple proofs or computational problems.
 		- A research project.
-		- A blog post summarizing the material.
+		- A written summary of the material covered.
