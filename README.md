@@ -12,17 +12,18 @@ My ultimate aim is to contribute to application research and pedagogy rather tha
 
 # Curriculum
 
-| TERM      | Track 1               | Track 2 |
-| --------- | ----------------------------------- | ---------------------------- |
-| Summer 24 | Theory of Computation           | Numerical Analysis                 |
-| Fall 24   | Abstract Linear Algebra         | Real Analysis            |
-| Winter 25 | Modern Algebra I                | Functional Analysis I    |
-| Spring 25 | Modern Algebra II               | Functional Analysis II   |
-| Summer 25 | Modern Algebra III              | Topology                 |
-| Fall 25   | Automata Theory                 | Dynamical Systems I      |
-| Winter 26 | Universal Algebra and Coalgebra | Dynamical Systems II     |
-| Spring 26 | Sheaf Theory                    | Multiagent Systems I     |
-| Summer 26 | Category Theory                 | Multiagent Systems II    |
+
+| TERM      | T1                                  | T2                         |
+| --------- | ----------------------------------- | -------------------------- |
+| Summer 24 | [[Abstract Linear Algebra]]         | [[Numerics I]]             |
+| Fall 24   | [[Real Analysis]]                   | [[Numerics II]]            |
+| Winter 25 | [[Modern Algebra I]]                | [[Functional Analysis I]]  |
+| Spring 25 | [[Modern Algebra II]]               | [[Functional Analysis II]] |
+| Summer 25 | [[Modern Algebra III]]              | [[Topology]]               |
+| Fall 25   | [[Automata Theory]]                 | [[Dynamical Systems I]]    |
+| Winter 26 | [[Universal Algebra and Coalgebra]] | [[Dynamical Systems II]]   |
+| Spring 26 | [[Sheaf Theory]]                    | [[Multiagent Systems I]]   |
+| Summer 26 | [[Category Theory]]                 | [[Multiagent Systems II]]  |
 
 
 # Schedule and Guidelines
