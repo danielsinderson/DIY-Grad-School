@@ -18,10 +18,28 @@ echo cube_root(27)
 
 
 # Exercise 1.11
-proc f_recursive(n:int): int = 
+proc f(n:int): int = 
     if n < 3:
         return n
     else:
-        return f_recursive(n - 1) + 2*f_recursive(n - 2) + 3*f_recursive(n - 3)
+        return f(n - 1) + 2*f(n - 2) + 3*f(n - 3)
 
-echo f_recursive(14)
+echo f(14)
+
+
+# prime test
+import std/math
+from std/random import rand
+import std/times
+
+proc is_prime(n:float): bool = 
+    for x in 2 .. int(n.sqrt()):
+        if n.floorMod(x.toFloat()) == 0:
+            return false
+    return true
+
+let y = rand(123456789)
+let time = cpuTime()
+let p = is_prime(y.toFloat())
+echo "Time taken: ", cpuTime() - time
+echo p

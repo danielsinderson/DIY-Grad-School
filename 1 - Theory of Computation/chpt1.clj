@@ -14,9 +14,14 @@
     (and (< c a) (< c b)) (+ (* a a) (b b))))
 
 ; 8: Newton's Method for cube roots
+(defn absolute-value [a]
+  (if (< a 0)
+    (* -1 a)
+    a))
+
 (defn cube-root [x guess tolerance]
   (defn close-enough? [a]
-    (< (abs (- (* a a a) x)) tolerance))
+    (< (absolute-value (- (* a a a) x)) tolerance))
   
   (defn improve-guess [a]
     (/ (+ (/ x (* a a)) (* 2 a)) 3))
@@ -32,9 +37,20 @@
 ;---------------
 ; 1.11
 
-(defn f-recursive [n]
+(defn f [n]
   (if (< n 3) 
     n 
-    (+ (f-recursive (- n 1)) (* 2 (f-recursive (- n 2))) (* 3 (f-recursive (- n 3))))))
+    (+ (f (- n 1)) (* 2 (f (- n 2))) (* 3 (f (- n 3))))))
 
-(println (f-recursive 14))
+(println (f 14))
+
+; Prime test
+(defn is-prime [n i]
+  (if (> (* i i) n) 
+    true
+    (if (= 0 (mod n i))
+      false
+      (is-prime n (+ i 1)))))
+
+(println (is-prime 111 2))
+(println (is-prime 31 2))

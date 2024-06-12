@@ -20,17 +20,28 @@ println(cube_root(27))
 
 
 # Exercise 1.11
-function f_recursive(n)
+function f(n)
     if n < 3
         return n
     else
-        return f_recursive(n - 1) + 2f_recursive(n - 2) + 3f_recursive(n - 3)
+        return f(n - 1) + 2f(n - 2) + 3f(n - 3)
     end
 end
 
-function f_iterative(n)
 
+println(f(14))
+
+
+# prime test
+function is_prime(n)
+    for x in 2:sqrt(n)
+        if n % x == 0
+            return false
+        end
+    end
+    return true
 end
 
-println(f_recursive(14))
-println(f_iterative(14))
+y = rand(2:123456789)
+@time is_prime(y)
+println("Is $y prime? $(is_prime(y))")
