@@ -48,3 +48,11 @@
 (println (cube-root 27 1 0.001))
 
 ;---------------
+; 1.11
+
+(defn f-recursive [n]
+  (if (< n 3) 
+    n 
+    (+ (f-recursive (- n 1)) (* 2 (f-recursive (- n 2))) (* 3 (f-recursive (- n 3))))))
+
+(println (f-recursive 14))

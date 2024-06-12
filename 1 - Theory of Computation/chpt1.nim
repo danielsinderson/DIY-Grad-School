@@ -27,3 +27,13 @@ proc cube_root(x:float, guess:float = 1.0, tolerance:float = 0.001): float =
 
 echo cube_root(9)
 echo cube_root(27)
+
+
+# Exercise 1.11
+proc f_recursive(n:int): int = 
+    if n < 3:
+        return n
+    else:
+        return f_recursive(n - 1) + 2*f_recursive(n - 2) + 3*f_recursive(n - 3)
+
+echo f_recursive(14)
