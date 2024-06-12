@@ -16,31 +16,6 @@
     (< a 0) (* a -1)
     (>= a 0) a))
 
-; ----- NEWTON'S METHOND EXERCISE -----
-(defn average
-  [x y]
-  (/ (+ x y) 2))
-
-(defn improve
-  [guess x]
-  (average guess x))
-
-(defn good-enough?
-  [guess x]
-  (< (absolute-value-cond (- guess x)) 0.001))
-
-(defn sqrt-iter
-  [guess x]
-  (if (good-enough? guess x)
-    guess
-    (sqrt-iter (improve guess x) x)))
-
-(defn sqrt 
-  [x]
-  (sqrt-iter 1.0 x))
-
-(println (sqrt 9))
-
 ;----------------
 ;EXERCISES
 ;----------------
@@ -55,5 +30,21 @@
     (and (< a b) (< a c)) (+ (* b b) (c c))
     (and (< b a) (< b c)) (+ (* a a) (c c))
     (and (< c a) (< c b)) (+ (* a a) (b b))))
+
+; 8: Newton's Method for cube roots
+(defn cube-root [x guess tolerance]
+  (defn close-enough? [a]
+    (< (absolute-value-cond (- (* a a a) x)) tolerance))
+  
+  (defn improve-guess [a]
+    (/ (+ (/ x (* a a)) (* 2 a)) 3))
+  
+  (defn newtons-method [a]
+    (if (close-enough? a) a (newtons-method (improve-guess a))))
+  
+  (float (newtons-method guess))
+  )
+
+(println (cube-root 27 1 0.001))
 
 ;---------------

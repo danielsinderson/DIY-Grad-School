@@ -1,34 +1,19 @@
-# functions and conditionals
 
-function sum_of_squares(a::Number, b::Number)::Number
-    return a^2 + b^2
-end
+# Exercise 1.8
 
+function cube_root(x, guess=1, tolerance=0.001)
+    close_enough(a) = abs(x - a^3) < tolerance
+    improve_guess(a) = ((x / a^2) + 2a) / 3
 
-function absolute_value(a::Number)::Number
-    if a < 0
-        return -a
-    else
-        return a
+    function newtons_method(y)
+        if (close_enough(y))
+            return y
+        else
+            newtons_method(improve_guess(y))
+        end
     end
+
+    return newtons_method(guess)
 end
 
-function sqrt_iter(guess, x)
-    if (good_enough(guess, x))
-        return guess
-    else
-        return sqrt_iter(improve(guess, x), x)
-    end
-end
-
-function improve(guess, x)::Number
-    return (guess + x) / 2
-end
-
-function good_enough(guess, x)::Number
-    return abs(guess - x) < 0.001
-end
-
-sqrt_iter(1, 9)
-
-
+print(cube_root(27))
