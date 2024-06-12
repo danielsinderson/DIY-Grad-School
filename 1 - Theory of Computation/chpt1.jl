@@ -1,4 +1,4 @@
-
+# EXERCISES
 # Exercise 1.8
 
 function cube_root(x, guess=1, tolerance=0.001)

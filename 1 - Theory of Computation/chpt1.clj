@@ -1,21 +1,3 @@
-; functions and conditionals
-
-(defn sum-of-squares
-  [a b]
-  (+ (* a a) (* b b)))
-
-(defn absolute-value-if
-  [a]
-  (if (< a 0)
-    (* -1 a)
-    a))
-
-(defn absolute-value-cond
-  [a]
-  (cond 
-    (< a 0) (* a -1)
-    (>= a 0) a))
-
 ;----------------
 ;EXERCISES
 ;----------------
@@ -34,7 +16,7 @@
 ; 8: Newton's Method for cube roots
 (defn cube-root [x guess tolerance]
   (defn close-enough? [a]
-    (< (absolute-value-cond (- (* a a a) x)) tolerance))
+    (< (abs (- (* a a a) x)) tolerance))
   
   (defn improve-guess [a]
     (/ (+ (/ x (* a a)) (* 2 a)) 3))
