@@ -38,7 +38,7 @@ During the month long breaks between terms I will be reading through a selection
 - **Secondary Curriculum**: 
 	- *How Life Works* by Philip Ball
 
-For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author.
+For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author(s).
 
 # Schedule and Guidelines
 - Schedule
