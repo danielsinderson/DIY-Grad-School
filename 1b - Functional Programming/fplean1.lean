@@ -1,4 +1,4 @@
--- Evaluating Expressions
+-- EVALUATING EXPRESSIONS
 #eval 1 + 2
 #eval 1 + 2 * 5
 #eval String.append "Hello, " "world!"
@@ -10,15 +10,15 @@
 #eval if 3 == 4 then "equal" else "not equal"
 
 
--- Types
+-- TYPES
 #eval (1 + 2 : Nat)
 #eval (1 - 2 : Nat)  -- Evaluates to 0 since -1 is not in the naturals
 #eval (1 - 2 : Int) -- Properly evaluates to -1
-#check String.append "This is a type mismatch. " ["A list of strings" " isn't a string"]
+-- #check String.append "This is a type mismatch. " ["A list of strings" " isn't a string"]
 
 
 
--- Functions and Definitions
+-- FUNCTIONS AND DEFINITIONS
 def hello := "Hello"
 def lean : String := "Lean"
 #eval String.append hello lean
@@ -46,3 +46,47 @@ def aStr : str := "This is a str, which is a String"
 
 abbrev N : Type := Nat   -- this marks the new type as reducible, which means it will always unfold to Nat
 def thirtyNine : N := 39
+
+
+-- STRUCTURES
+structure Point where
+  x : Float
+  y : Float
+deriving Repr -- this line tells Lean to create code for displaying Point values in #eval expressions
+
+def origin : Point := {x := 0.0, y := 0.0}
+#eval origin
+#eval origin.x
+#eval origin.y
+
+def addPoints (p1 : Point) (p2 : Point) : Point :=
+  {x := p1.x + p2.x, y := p1.y + p2.y}
+
+def distance (p1 : Point) (p2 : Point) : Float :=
+  Float.sqrt (((p1.x - p2.x)^2) + ((p1.y - p2.y)^2))
+
+#eval distance { x := 1.0, y := 2.0 } { x := 5.0, y := -1.0 }
+
+def zeroX (p : Point) : Point :=
+  { p with x := 0.0 }
+
+structure RectangularPrism where
+  h : Float
+  w : Float
+  d : Float
+deriving Repr
+
+def volumeOfPrism (r : RectangularPrism) : Float :=
+  r.h * r.w * r.d
+
+structure LineSegment where
+  start : Point
+  ending : Point
+deriving Repr
+
+def lengthOfSegment (s : LineSegment) : Float :=
+  distance s.start s.ending
+
+
+
+-- DATA TYPES, PATTERNS, AND RECURSION
