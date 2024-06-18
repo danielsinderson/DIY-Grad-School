@@ -11,12 +11,11 @@ The first is that a standard PhD program isn't an option: fellowships don't pay 
 | *S 24* | Abstract Linear Algebra | Real Analysis | Functional Programming |
 | F 24   | Algebra I               | Analysis I    | Dynamical Systems I    |
 | W 25   | Algebra II              | Analysis II   | Dynamical Systems II   |
-| Sp 25  | Algebra III             | Analysis III  | Complex Systems I      |
+| Sp 25  | Algebra III             | Analysis III  | Dynamical Systems III  |
 | *S 25* | Topology                | Lie Theory    | Automata Theory        |
-| F 25   | Algebraic Topology I    | Manifolds I   | Complex Systems II     |
-| W 26   | Algebraic Topology II   | Manifolds II  | Multiagent Systems I   |
-| Sp 26  | Algebraic Topology III  | Manifolds III | Multiagent Systems II  |
-
+| F 25   | Algebraic Topology I    | Manifolds I   | Multiagent Systems I   |
+| W 26   | Algebraic Topology II   | Manifolds II  | Multiagent Systems II  |
+| Sp 26  | Algebraic Topology III  | Manifolds III | Multiagent Systems III |
 ## Secondary Curriculum
 During the month long breaks between terms I will be reading through a selection of topics in social theory, complex systems, biology, and computer science for fun and motivation. I'll decide on these as the breaks come up and add them here.
 
@@ -24,11 +23,10 @@ During the month long breaks between terms I will be reading through a selection
 - **Primary Curriculum**: 
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
-	- **Functional Programming**: *Functional Programming in Lean* and *Category Theory for Programmers* by Bartosz Milewski
+	- **Functional Programming**: *Category Theory for Programmers* by Bartosz Milewski
 	- **Algebra**: *Algebra: Chapter 0* by Paolo Aluffi
 	- **Analysis**: *Measure, Integration, and Real Analysis* by Sheldon Axler
 	- **Dynamical Systems**: *Nonlinear Dynamics and Chaos with Applications* by Steven Strogatz
-	- **Complex Systems**: *An Introduction to the Theory of Complex Systems* by Stefan Thurner, Rudolf Hanel, and Peter Klimek
 	- **Topology**: *Topology: A Categorical Approach* by Tai-Danae Bradley, Tyler Bryson, and John Terilla
 	- **Lie Theory**: *Naive Lie Theory* by John Stillwell
 	- **Automata Theory**: *Applications of Automata Theory and Algebra* by John Rhodes
