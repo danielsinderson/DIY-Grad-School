@@ -23,7 +23,7 @@ During the month long breaks between terms I will be reading through a selection
 - **Primary Curriculum**: 
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
-	- **Functional Programming**: *Category Theory for Programmers* by Bartosz Milewski
+	- **Functional Programming**: *The Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman; and *Functional Programming in Lean*
 	- **Algebra**: *Algebra: Chapter 0* by Paolo Aluffi
 	- **Analysis**: *Measure, Integration, and Real Analysis* by Sheldon Axler
 	- **Dynamical Systems**: *Nonlinear Dynamics and Chaos with Applications* by Steven Strogatz

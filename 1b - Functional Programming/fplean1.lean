@@ -19,3 +19,30 @@
 
 
 -- Functions and Definitions
+def hello := "Hello"
+def lean : String := "Lean"
+#eval String.append hello lean
+
+def add1 (n: Nat) : Nat := n + 1
+#eval add1 7
+
+def maximum (n : Nat) (k : Nat) : Nat :=
+  if n < k then
+    k
+  else n
+#eval maximum 23 45
+
+def joinStringWith (s : String) (left : String) (right : String) : String :=
+  String.append left (String.append s right)
+#eval joinStringWith ", " "one" "and another"
+#check (joinStringWith)
+
+def volume (height : Nat) (width : Nat) (depth : Nat) : Nat :=
+  height * width * depth
+#eval volume 10 10 10
+
+def str : Type := String
+def aStr : str := "This is a str, which is a String"
+
+abbrev N : Type := Nat   -- this marks the new type as reducible, which means it will always unfold to Nat
+def thirtyNine : N := 39
