@@ -1,7 +1,8 @@
 
 # Why?
-I've designed my own course of advanced study for two reasons.
-The first is that a standard PhD program isn't an option: fellowships don't pay enough to support a family. The second is that my ideal course of study is interdisciplinary in a way that's difficult to capture within a traditional graduate program.
+I've designed my own course of advanced study for two reasons. The first is that a standard PhD program isn't an option: fellowships don't pay enough to support a family. The second is that my ideal course of study straddles the line between pure and applied mathematics in a way that's difficult to capture within a traditional graduate program.
+
+The spirit of the program is in applied mathematics and systems theory, in utilizing the language of mathematics to model and understand phenomena in the world, but the tools I'm interested in only partially overlap traditional graduate programs in applied mathematics. I got a taste of abstraction with category theory and I got hooked.
 
 
 # Curriculum

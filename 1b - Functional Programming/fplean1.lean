@@ -90,3 +90,21 @@ def lengthOfSegment (s : LineSegment) : Float :=
 
 
 -- DATA TYPES, PATTERNS, AND RECURSION
+-- inductive Nat where
+--   | zero : Nat
+--   | succ (n : Nat) : Nat
+
+def isZero (n : Nat) : Bool :=
+  match n with
+  | Nat.zero => true
+  | Nat.succ k => false
+
+def pred (n : Nat) : Nat :=
+  match n with
+  | Nat.zero => Nat.zero
+  | Nat.succ k => k
+#eval pred 5
+
+def width (p : Point) : Float :=
+  match p with
+  | { x := h, y := w } => w
