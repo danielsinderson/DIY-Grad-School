@@ -9,11 +9,11 @@ The spirit of the program is in applied mathematics and systems theory, in utili
 
 | TERM   | Track 1                 | Track 2       | Track 3                |
 | ------ | ----------------------- | ------------- | ---------------------- |
-| *S 24* | Abstract Linear Algebra | Real Analysis | Functional Programming |
+| *S 24* | Abstract Linear Algebra | Real Analysis |  |
 | F 24   | Algebra I               | Analysis I    | Dynamical Systems I    |
 | W 25   | Algebra II              | Analysis II   | Dynamical Systems II   |
 | Sp 25  | Algebra III             | Analysis III  | Dynamical Systems III  |
-| *S 25* | Topology                | Lie Theory    | Automata Theory        |
+| *S 25* | Topology                | Lie Theory    |         |
 | F 25   | Algebraic Topology I    | Manifolds I   | Multiagent Systems I   |
 | W 26   | Algebraic Topology II   | Manifolds II  | Multiagent Systems II  |
 | Sp 26  | Algebraic Topology III  | Manifolds III | Multiagent Systems III |
@@ -24,18 +24,19 @@ During the month long breaks between terms I will be reading through a selection
 - **Primary Curriculum**: 
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
-	- **Functional Programming**: *The Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 	- **Algebra**: *Algebra: Chapter 0* by Paolo Aluffi
 	- **Analysis**: *Measure, Integration, and Real Analysis* by Sheldon Axler
 	- **Dynamical Systems**: *Nonlinear Dynamics and Chaos with Applications* by Steven Strogatz
 	- **Topology**: *Topology: A Categorical Approach* by Tai-Danae Bradley, Tyler Bryson, and John Terilla
 	- **Lie Theory**: *Naive Lie Theory* by John Stillwell
-	- **Automata Theory**: *Applications of Automata Theory and Algebra* by John Rhodes
 	- **Algebraic Topology**: *Algebraic Topology* by Allen Hatcher
 	- **Manifolds**: *Introduction to Smooth Manifolds* by John M. Lee
 	- **Multiagent Systems**: *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations* by Yoav Shoham and Kevin Leyton-Brown
 - **Secondary Curriculum**: 
 	- *Functional Programming in Lean*
+	- *The Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
+	- *Applications of Automata Theory and Algebra* by John Rhodes
+
 
 For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author(s).
 
