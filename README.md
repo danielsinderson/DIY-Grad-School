@@ -35,6 +35,7 @@ During the month long breaks between terms I will be reading through a selection
 - **Secondary Curriculum**: 
 	- *Functional Programming in Lean*
 	- *The Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
+	- *How Life Works* by Philip Ball
 	- *Applications of Automata Theory and Algebra* by John Rhodes
 
 
@@ -44,7 +45,7 @@ For course texts I tried to balance readability, coverage, and the availability/
 - Schedule
 	- **Winter**: January - February
 	- **Spring**: April - May
-	- **Summer**: July - August (for review courses)
+	- **Summer**: July - August (for preparatory and review courses)
 	- **Fall**: October - November
 - Guidelines
 	- 4 hours per week per class
