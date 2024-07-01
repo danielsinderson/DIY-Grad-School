@@ -7,21 +7,26 @@ The spirit of the program is in applied mathematics and systems theory, in utili
 
 # Curriculum
 
-| TERM   | Track 1                 | Track 2       | Track 3                |
-| ------ | ----------------------- | ------------- | ---------------------- |
-| *S 24* | Abstract Linear Algebra | Real Analysis |  |
-| F 24   | Algebra I               | Analysis I    | Dynamical Systems I    |
-| W 25   | Algebra II              | Analysis II   | Dynamical Systems II   |
-| Sp 25  | Algebra III             | Analysis III  | Dynamical Systems III  |
-| *S 25* | Topology                | Lie Theory    |         |
-| F 25   | Algebraic Topology I    | Manifolds I   | Multiagent Systems I   |
-| W 26   | Algebraic Topology II   | Manifolds II  | Multiagent Systems II  |
-| Sp 26  | Algebraic Topology III  | Manifolds III | Multiagent Systems III |
+| TERM   | Track 1                 | Track 2                 | Track 3                      |
+| ------ | ----------------------- | ----------------------- | ---------------------------- |
+| *S 24* | Statistical Modeling    | Theory of Computation   | Programming & Proofs in Lean |
+| F 24   | Abstract Linear Algebra | Real Analysis           | Dynamical Systems I          |
+| W 25   | Algebra I               | Analysis I              | Dynamical Systems II         |
+| Sp 25  | Algebra II              | Analysis II             | Dynamical Systems III        |
+| *S 25* | Topology                | Lie Theory              |                              |
+| F 25   | Algebraic Topology I    | Manifolds I             | Multiagent Systems I         |
+| W 26   | Algebraic Topology II   | Manifolds II            | Multiagent Systems II        |
+| Sp 26  | Algebraic Topology III  | Manifolds III           | Multiagent Systems III       |
+| *S 26* | Applied Topology        | Applied Category Theory |                              |
+
 ## Secondary Curriculum
 During the month long breaks between terms I will be reading through a selection of topics in social theory, complex systems, biology, and computer science for fun and motivation. I'll decide on these as the breaks come up and add them here.
 
 ## Texts
 - **Primary Curriculum**: 
+	- **Statistical Modeling**: *Rethinking Statistics* by Richard McElreath
+	- **Theory of Computation**: *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
+	- **Programming & Proofs in Lean**: *Functional Programming in Lean* and *Theorem Proving in Lean 4* 
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
 	- **Algebra**: *Algebra: Chapter 0* by Paolo Aluffi
@@ -32,9 +37,9 @@ During the month long breaks between terms I will be reading through a selection
 	- **Algebraic Topology**: *Algebraic Topology* by Allen Hatcher
 	- **Manifolds**: *Introduction to Smooth Manifolds* by John M. Lee
 	- **Multiagent Systems**: *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations* by Yoav Shoham and Kevin Leyton-Brown
+	- **Applied Topology**: *Elementary Applied Topology* by Robert Ghrist
+	- **Applied Category Theory**: *Seven Sketches in Compositionality* by Brendan Fong and David Spivak
 - **Secondary Curriculum**: 
-	- *Functional Programming in Lean*
-	- *The Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 	- *How Life Works* by Philip Ball
 	- *Applications of Automata Theory and Algebra* by John Rhodes
 

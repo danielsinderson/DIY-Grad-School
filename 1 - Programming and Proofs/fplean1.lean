@@ -108,3 +108,44 @@ def pred (n : Nat) : Nat :=
 def width (p : Point) : Float :=
   match p with
   | { x := h, y := w } => w
+
+def even (n: Nat) : Nat :=
+  match n with
+  | Nat.zero => true
+  | Nat.succ k => not (even k)
+
+def plus (n : Nat) (k : Nat) : Nat :=
+  match k with
+  | Nat.zero => n
+  | Nat.succ k' => Nat.succ (plus n k')
+
+def minus (n : Nat) (k : Nat) : Nat :=
+  match k with
+  | Nat.zero => N
+  | Nat.succ k' => pred (minus n k')
+
+def times (n : Nat) (k : Nat) : Nat :=
+  match k with
+  | Nat.zero => Nat.zero
+  | Nat.succ k' => plus n (times n k')
+
+
+
+-- POLYMORPHISM
+
+-- a polymorphic 2D point type, where the x and y coordinates are an arbitrary type
+structure PPoint (α : Type) where
+  x : α
+  y : α
+deriving Repr
+
+-- Definitions can also be polymorphic, and should be when taking polymorphic types
+-- E.g. this function takes a polymorphic point of type α and replaces its "x" value
+def replaceX (α : Type) (point : PPoint) (newX : α) : PPoint α :=
+  { point with x := newX }
+
+#check replaceX
+#check replaceX Nat
+
+
+def primes : List Nat := [2, 3, 5, 7]
