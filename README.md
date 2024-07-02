@@ -9,7 +9,7 @@ The spirit of the program is in applied mathematics and systems theory, in utili
 
 | TERM   | Track 1                 | Track 2                 | Track 3                      |
 | ------ | ----------------------- | ----------------------- | ---------------------------- |
-| *S 24* | Statistical Modeling    | Theory of Computation   | Programming & Proofs in Lean |
+| *S 24* | Theory of Computation   | Programming & Proofs    |                              |
 | F 24   | Abstract Linear Algebra | Real Analysis           | Dynamical Systems I          |
 | W 25   | Algebra I               | Analysis I              | Dynamical Systems II         |
 | Sp 25  | Algebra II              | Analysis II             | Dynamical Systems III        |
@@ -24,9 +24,8 @@ During the month long breaks between terms I will be reading through a selection
 
 ## Texts
 - **Primary Curriculum**: 
-	- **Statistical Modeling**: *Rethinking Statistics* by Richard McElreath
 	- **Theory of Computation**: *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
-	- **Programming & Proofs in Lean**: *Functional Programming in Lean* and *Theorem Proving in Lean 4* 
+	- **Programming & Proofs**: *Functional Programming in Lean* and *Theorem Proving in Lean 4* 
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
 	- **Algebra**: *Algebra: Chapter 0* by Paolo Aluffi

@@ -237,3 +237,25 @@ def greaterThanFive (x : Int) : Bool :=
 
 
 -- 1.6.3
+def Prod.swap {α β : Type} (pair : α × β) : β × α :=
+  (pair.snd, pair.fst)
+#eval Prod.swap fives
+
+
+-- 1.6.4
+
+
+def PetName : Type := String ⊕ String
+
+def animals : List PetName :=
+  [Sum.inl "Spot", Sum.inr "Tiger", Sum.inl "Fifi", Sum.inl "Rex", Sum.inr "Floof"]
+
+def howManyDogs (pets : List PetName) : Nat :=
+  match pets with
+  | [] => 0
+  | Sum.inl _ :: morePets => howManyDogs morePets + 1
+  | Sum.inr _ :: morePets => howManyDogs morePets
+
+
+
+-- 1.6.5
