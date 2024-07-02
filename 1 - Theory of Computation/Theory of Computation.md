@@ -47,3 +47,22 @@ A polymorphic type is a data type that takes another type as an argument. An exa
 *(Currying and Partial Application)*
 
 Currying is where a function that takes X arguments, when given only Y arguments (Y < X), produces a new function that takes X-Y arguments. In other words, the function was partially applied using the given arguments. This takes advantage of the proof that a function $f: A \times B \rightarrow C$ is isomorphic to a function $f': A \rightarrow (B \rightarrow C)$. 
+
+
+----------
+*(Functions Follow Data)*
+
+In general, the type of data you're dealing with will determine the appropriate type of function for dealing with it: recursive data types require recursive functions, and polymorphic data types will require polymorphic functions.
+
+
+---------------
+*(Naming Conventions in Lean for Operations that Might Fail)*
+
+In Lean, when a function / operation might fail, it is common for that operation to have multiple forms. For instance, take List.head.
+- List.head requires mathematical proof that the list isn't empty
+- List.head? returns an Option type
+- List.head! will crash if the list is empty
+- List.headD will provide a default value is the list is empty
+
+These are just naming conventions, not special syntax.
+

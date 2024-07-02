@@ -109,7 +109,7 @@ def width (p : Point) : Float :=
   match p with
   | { x := h, y := w } => w
 
-def even (n: Nat) : Nat :=
+def even (n: Nat) : Bool :=
   match n with
   | Nat.zero => true
   | Nat.succ k => not (even k)
@@ -121,7 +121,7 @@ def plus (n : Nat) (k : Nat) : Nat :=
 
 def minus (n : Nat) (k : Nat) : Nat :=
   match k with
-  | Nat.zero => N
+  | Nat.zero => n
   | Nat.succ k' => pred (minus n k')
 
 def times (n : Nat) (k : Nat) : Nat :=
@@ -141,11 +141,99 @@ deriving Repr
 
 -- Definitions can also be polymorphic, and should be when taking polymorphic types
 -- E.g. this function takes a polymorphic point of type α and replaces its "x" value
-def replaceX (α : Type) (point : PPoint) (newX : α) : PPoint α :=
+def replaceX (α : Type) (point : PPoint α) (newX : α) : PPoint α :=
   { point with x := newX }
+
 
 #check replaceX
 #check replaceX Nat
 
+-- inductive List (α : Type) where
+--   | nil : List α
+--   | cons : α → List α → List α
 
 def primes : List Nat := [2, 3, 5, 7]
+
+-- def length (α : Type) (xs : List α) : Nat :=
+--   match xs with
+--   | List.nil => 0
+--   | List.cons y ys => Nat.succ (length α ys)
+
+-- with lists, [] and :: can be used in place of the nil and cons constructors
+def length (α : Type) (xs : List α) : Nat :=
+  match xs with
+  | [] => 0
+  | y :: ys => Nat.succ (length α ys)
+
+
+-- it's possible to have implicit type parameters in polymorphic functions using curly braces
+--                  v curlys v
+def length_implicit {α : Type} (xs : List α) : Nat :=
+  match xs with
+  | [] => 0
+  | y :: ys => Nat.succ (length_implicit ys)
+
+
+-- BUILT-INS (real ones are capitalized!)
+
+-- Options for possibly null values
+inductive option (α : Type) : Type where
+  | none : option α
+  | some (val : α) : option α
+
+-- prod for product types (can use × as infix operator)
+structure prod (α : Type) (β : Type) : Type where
+  fst : α
+  snd : β
+
+#check prod Nat Int
+#check Nat × Int
+def fives : String × Int := ("five", 5)
+
+-- sum for sum types (can use ⊕ as infix operator)
+inductive sum (α : Type) (β : Type) : Type where
+ | inl : α → sum α β
+ | inr : β → sum α β
+
+#check sum String Int
+#check String ⊕ Int
+def ItemName : Type := String ⊕ Int -- String for name, Int for ID
+
+-- unit for missing data / void-ish type; it's also
+inductive unit : Type where
+  | u : unit
+
+
+-- there is also an empty datatype for truly unreachable code, Empty, that has no constructors
+
+
+-- EXERCISES --
+-- 1.6.1
+def List.last? {α : Type} (l : List α) : Option α :=
+  match l with
+  | [] => none
+  | y :: [] => y
+  | y :: ys => last? ys
+
+#eval List.last? [1, 2, 3]
+#eval List.last? [] (α := Int)
+
+
+-- 1.6.2
+def List.findFirst? {α : Type} (xs : List α) (predicate : α → Bool) : Option α :=
+  match xs with
+  | [] => none
+  | y :: ys => if predicate y then y else (findFirst? ys predicate)
+
+def greaterThanFive (x : Int) : Bool :=
+  if x > 5 then
+    true
+  else
+    false
+
+#eval List.findFirst? [1, 2, 3, 4, 5] greaterThanFive
+#eval List.findFirst? [] greaterThanFive
+#eval List.findFirst? [1, 2, 3, 4, 5, 6, 7, 8] greaterThanFive
+
+
+-- 1.6.3
