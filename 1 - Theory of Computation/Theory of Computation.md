@@ -10,7 +10,7 @@
 ## Notes
 -------------------------------------------------
 *(what computer science is about*)
-Computer science is not about computers, but about imperative knowledge. It's the study of computational processes.
+Computer science is not about computers, but about imperative, or "how to," knowledge. It's the study of computational processes.
 
 
 -------------------------------------------------
