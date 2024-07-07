@@ -7,15 +7,15 @@ I've designed my own course of advanced study for two reasons. The first is that
 
 | TERM   | Track 1                 | Track 2                 | Track 3                   |
 | ------ | ----------------------- | ----------------------- | ------------------------- |
-| S 24   | Abstract Linear Algebra | Real Analysis           | Theory of Computation I   |
-| F 24   | Algebra I               | Analysis I              | Dynamical Systems I       |
-| W 25   | Algebra II              | Analysis II             | Dynamical Systems II      |
-| Sp 25  | Algebra III             | Analysis III            | Dynamical Systems III     |
-| S 25   | Topology                | Lie Theory              | Theory of Computation II  |
-| F 25   | Algebraic Topology I    | Manifolds I             | Mathematical Sciences I   |
-| W 26   | Algebraic Topology II   | Manifolds II            | Mathematical Sciences II  |
-| Sp 26  | Algebraic Topology III  | Manifolds III           | Mathematical Sciences III |
-| S 26   | Applied Topology        | Applied Category Theory | Theory of Computation III |
+| 1      | Abstract Linear Algebra | Real Analysis           | Theory of Computation I   |
+| 2      | Algebra I               | Analysis I              | Dynamical Systems I       |
+| 3      | Algebra II              | Analysis II             | Dynamical Systems II      |
+| 4      | Algebra III             | Analysis III            | Dynamical Systems III     |
+| 5      | Topology                | Lie Theory              | Theory of Computation II  |
+| 6      | Algebraic Topology I    | Manifolds I             | Mathematical Sciences I   |
+| 7      | Algebraic Topology II   | Manifolds II            | Mathematical Sciences II  |
+| 8      | Algebraic Topology III  | Manifolds III           | Mathematical Sciences III |
+| 9      | Applied Topology        | Applied Category Theory | Theory of Computation III |
 
 
 ## Texts
