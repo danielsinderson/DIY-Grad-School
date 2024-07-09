@@ -66,3 +66,12 @@ In Lean, when a function / operation might fail, it is common for that operation
 
 These are just naming conventions, not special syntax.
 
+-------------------------
+*(First Class Status of Elements in Programming Languages; from SICP pg.76)*
+A computational element, such as types or procedures, is "first-class" in a language is the following hold: 
+- they can be assigned to a variable
+- they can be passed as arguments to a procedure
+- they can be returned by procedures
+- they can be stored in data structures
+
+Functional languages make functions first-class, and dependently-typed languages make types first-class.

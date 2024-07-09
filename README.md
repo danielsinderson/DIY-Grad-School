@@ -22,7 +22,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 - **Primary Curriculum**: 
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
-	- **Theory of Computation**: *Structure and Interpretation of Computer Programs* by Abelson, Sussman, and Sussman; *Category Theory for Programmers* by Bartosz Milewski; and *Program == Proof* by Samuel Mimram
+	- **Theory of Computation**: (0)*Structure and Interpretation of Computer Programs* by Abelson, Sussman, and Sussman; (1) *Program == Proof* by Samuel Mimram; (2) *Category Theory for Programmers* by Bartosz Milewski; and (3) *Universal Algebra and Coalgebra* by Klaus Denecke and Shelly L. Wismath
 	- **Algebra**: *Algebra: Chapter 0* by Paolo Aluffi
 	- **Analysis**: *Measure, Integration, and Real Analysis* by Sheldon Axler
 	- **Dynamical Systems**: *Nonlinear Dynamics and Chaos* by Stephen Strogatz
@@ -30,7 +30,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- **Lie Theory**: *Naive Lie Theory* by John Stillwell
 	- **Algebraic Topology**: *Algebraic Topology* by Allen Hatcher
 	- **Manifolds**: *Introduction to Smooth Manifolds* by John M. Lee
-	- **Mathematical Sciences**: *Introduction to Mathematical Sociology* by Phillip Bonacich and Philip Lu and *The Logic of Social Science* by James Mahoney; *Applications of Automata Theory and Algebra* by John Rhodes and *Life Itself* by Robert Rosen; *Physics from Symmetry* by Jakob Schwichtenberg and *Mathematical Physics* by Robert Geroch
+	- **Mathematical Sciences**: (1) *Introduction to Mathematical Sociology* by Phillip Bonacich and Philip Lu and *The Logic of Social Science* by James Mahoney; (2) *Applications of Automata Theory and Algebra* by John Rhodes and *Life Itself* by Robert Rosen; (3) *Physics from Symmetry* by Jakob Schwichtenberg and *Mathematical Physics* by Robert Geroch
 	- **Applied Topology**: *Elementary Applied Topology* by Robert Ghrist
 	- **Applied Category Theory**: *Seven Sketches in Compositionality* by Brendan Fong and David Spivak
 

@@ -15,7 +15,7 @@
 #eval (1 - 2 : Nat)  -- Evaluates to 0 since -1 is not in the naturals
 #eval (1 - 2 : Int) -- Properly evaluates to -1
 -- #check String.append "This is a type mismatch. " ["A list of strings" " isn't a string"]
-
+#check 1 = 0
 
 
 -- FUNCTIONS AND DEFINITIONS
