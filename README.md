@@ -7,6 +7,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 
 | TERM   | Track 1                 | Track 2                 | Track 3                   |
 | ------ | ----------------------- | ----------------------- | ------------------------- |
+| 0      | Data Science            | Statistical Modeling    | Computational Thinking    |
 | 1      | Abstract Linear Algebra | Real Analysis           | Theory of Computation I   |
 | 2      | Algebra I               | Analysis I              | Dynamical Systems I       |
 | 3      | Algebra II              | Analysis II             | Dynamical Systems II      |
@@ -20,9 +21,12 @@ I've designed my own course of advanced study for two reasons. The first is that
 
 ## Texts
 - **Primary Curriculum**: 
+	- **Data Science**: *Data Science in a Box*
+	- **Statistical Modeling**: *Statistical Rethinking* by Richard R. McElreath
+	- **Computational Thinking**: *Introduction to Computational Thinking* by Alan Edelman, David P. Sanders, and Charles E. Leiserson
+	- **Theory of Computation**: (1) *Program == Proof* by Samuel Mimram; (2) *Category Theory for Programmers* by Bartosz Milewski; and (3) *Universal Algebra and Coalgebra* by Klaus Denecke and Shelly L. Wismath
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
-	- **Theory of Computation**: (0)*Structure and Interpretation of Computer Programs* by Abelson, Sussman, and Sussman; (1) *Program == Proof* by Samuel Mimram; (2) *Category Theory for Programmers* by Bartosz Milewski; and (3) *Universal Algebra and Coalgebra* by Klaus Denecke and Shelly L. Wismath
 	- **Algebra**: *Algebra: Chapter 0* by Paolo Aluffi
 	- **Analysis**: *Measure, Integration, and Real Analysis* by Sheldon Axler
 	- **Dynamical Systems**: *Nonlinear Dynamics and Chaos* by Stephen Strogatz
