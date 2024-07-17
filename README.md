@@ -23,7 +23,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 - **Primary Curriculum**: 
 	- **Data Science**: *R for Data Science* by Hadley Wickham, Mine Centinkaya-Rundel, Garrett Grolemund, and *Tidy Modeling with R* by Max Kuhn and Julia Silge
 	- **Statistical Modeling**: *Statistical Rethinking* by Richard R. McElreath
-	- **Computational Thinking**: *Introduction to Computational Thinking* by Alan Edelman, David P. Sanders, and Charles E. Leiserson
+	- **Computational Thinking**: *Introduction to Computational Thinking* by Alan Edelman, David P. Sanders, and Charles E. Leiserson and *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 	- **Theory of Computation**: (1) *Program == Proof* by Samuel Mimram; (2) *Category Theory for Programmers* by Bartosz Milewski; and (3) *Universal Algebra and Coalgebra* by Klaus Denecke and Shelly L. Wismath
 	- **Abstract Linear Algebra**: *Linear Algebra Done Right* by Sheldon Axler
 	- **Real Analysis**: *Understanding Analysis* by Stephen Abbott
