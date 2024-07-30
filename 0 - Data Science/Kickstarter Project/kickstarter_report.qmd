@@ -1,0 +1,24 @@
+---
+title: "Tabletop Roleplaying Games on Kickstarter"
+author: "Daniel Sinderson"
+date: "8/1/2024"
+format: 
+  html:
+    fig-width: 8
+    fig-height: 4
+    code-fold: true
+---
+
+# Goals of the Report
+My goal with this report is two-fold. First, I want to get a feeling for how often RPGs get funded and for how much. Second, I want to practice data analysis with a proper project. 
+
+# The Dataset
+The dataset that I'll be using for the analysis was created by the Inter-university Consortium for Political and Social Research (ICPSR). It contains data on Kickstarter projects from 2009 to 2023.
+
+```{r}
+library(tidyverse)
+
+ks1 <- read_tsv("0 - Data Science/38050-0001-Data.tsv")
+glimpse(ks1)
+```
+
