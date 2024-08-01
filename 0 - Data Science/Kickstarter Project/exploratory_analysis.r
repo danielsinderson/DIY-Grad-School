@@ -176,3 +176,76 @@ games |>
   ggplot(aes(GOAL_IN_USD, y = BACKERS_COUNT)) +
   geom_point() +
   geom_smooth()
+
+
+
+
+
+# MODEL
+# Logistic regression of SUCCEEDED
+game_modeling_data <- games |>
+  select(GOAL_IN_USD, LAUNCH_MONTH, AVG_DONATION, BACKERS_COUNT, SUCCEEDED)
+
+set.seed(123)
+train_index <- sample(row.names(game_modeling_data), 0.7 * nrow(games))
+train_data <- game_modeling_data[train_index, ]
+test_index <- setdiff(row.names(game_modeling_data), train_index)
+test_data <- game_modeling_data[test_index, ]
+
+model <- glm(SUCCEEDED ~ ., data = train_data, family = "binomial")
+summary(model)
+beta <- as.matrix(model$coefficients)
+beta
+
+# Predict and classify test data with cutoff = 0.5
+alpha <- 0.8
+phat <- predict(model, test_data, type = "response")
+head(phat)
+
+TP <- sum((test_data$SUCCEEDED == 1) & (phat >= alpha))
+FN <- sum((test_data$SUCCEEDED == 0) & (phat < alpha))
+FP <- sum((test_data$SUCCEEDED == 0) & (phat >= alpha)) # type 2 error
+TN <- sum((test_data$SUCCEEDED == 1) & (phat < alpha)) # type 1 error
+
+confusion_matrix <- matrix(c(FN, TN, FP, TP), nrow = 2, ncol = 2)
+confusion_matrix
+correct_classification_rate <- (FN + TP) / (nrow(test_data))
+correct_classification_rate
+type_1_error_rate <- TN / (TN + TP)
+type_1_error_rate
+type_2_error_rate <- FP / (FP + FN)
+type_2_error_rate
+
+
+# Creation of ROC curve (Receiver Operating Characteristics)
+# curve of TP against FP as function of alpha value f(alpha) = [FP, TP]
+num_intervals <- 1000
+delta <- 1 / num_intervals
+alpha_range <- seq(0, 1, delta)
+alpha_range
+
+tp <- tn <- fn <- fp <- rep(0, length(alpha_range))
+
+for (alpha in alpha_range) {
+  tp[alpha * 1000] <- sum((test_data$SUCCEEDED == 1) & (phat >= alpha))
+  fn[alpha * 1000] <- sum((test_data$SUCCEEDED == 0) & (phat < alpha))
+  fp[alpha * 1000] <- sum((test_data$SUCCEEDED == 0) & (phat >= alpha)) # type 2 error
+  tn[alpha * 1000] <- sum((test_data$SUCCEEDED == 1) & (phat < alpha)) # type 1 error
+}
+tp
+fn
+correct_classification_rate <- (fn + tp) / (nrow(test_data))
+correct_classification_rate
+type_1_error_rate <- tn / (tn + tp)
+type_1_error_rate
+type_2_error_rate <- fp / (fp + fn)
+type_2_error_rate
+
+plot(fp, tp, type = "l")
+
+# area under the ROC curve [0, 1] serves as a diagnostic measure of the model's effectiveness
+AUC <- sum(tp) / sum(tp + fp)
+AUC
+
+# null deviance is another diagnostic measure [0, +infinity)
+# larger value indicates better evidence for rejecting the null hypothesis
