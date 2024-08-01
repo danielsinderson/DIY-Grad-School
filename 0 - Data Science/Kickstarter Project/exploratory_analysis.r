@@ -20,6 +20,10 @@ games <- ks |>
     GOAL_IN_USD = as.numeric(str_remove_all(str_sub(GOAL_IN_USD, 2, -1), ",")),
     PLEDGED_IN_USD = as.numeric(str_remove_all(str_sub(PLEDGED_IN_USD, 2, -1), ",")),
     GOAL_SCALE = floor(log10(GOAL_IN_USD)),
+    AVG_DONATION = case_when(
+      BACKERS_COUNT != 0 ~ PLEDGED_IN_USD / BACKERS_COUNT,
+      .default = 0
+    ),
     LAUNCHED_DATE = mdy(LAUNCHED_DATE),
     LAUNCH_YEAR = year(LAUNCHED_DATE),
     LAUNCH_MONTH = month(LAUNCHED_DATE),
@@ -133,3 +137,42 @@ games |>
   ggplot(aes(x = log10(GOAL_IN_USD), y = log10(PLEDGED_IN_USD))) +
   geom_point(aes(color = STATE)) +
   geom_smooth(aes(color = STATE))
+
+
+
+# What is the average donation for successful/failed campaigns
+games |>
+  group_by(SUCCEEDED) |>
+  summarize(
+    donation_mean = mean(AVG_DONATION),
+    donation_median = median(AVG_DONATION)
+  )
+
+
+games |>
+  ggplot(aes(x = STATE, y = AVG_DONATION)) +
+  geom_boxplot()
+
+games |>
+  ggplot(aes(x = AVG_DONATION)) +
+  geom_density()
+
+games |>
+  ggplot(aes(x = PLEDGED_IN_USD, y = AVG_DONATION)) +
+  geom_point(aes(color = STATE)) +
+  geom_smooth(aes(color = STATE))
+
+
+
+# How many backers for successful/failed campaigns
+games |>
+  group_by(SUCCEEDED) |>
+  summarize(
+    num_backers_mean = mean(BACKERS_COUNT),
+    num_backers_median = median(BACKERS_COUNT)
+  )
+
+games |>
+  ggplot(aes(GOAL_IN_USD, y = BACKERS_COUNT)) +
+  geom_point() +
+  geom_smooth()
