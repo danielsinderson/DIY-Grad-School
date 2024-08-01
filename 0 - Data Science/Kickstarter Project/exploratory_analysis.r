@@ -1,18 +1,18 @@
 library(tidyverse)
 
 ks <- read_tsv("0 - Data Science/Kickstarter Project/38050-0001-Data.tsv")
-glimpse(ks)
-
-ks |>
-  filter(CASEID == 506200) |>
-  select(LAUNCHED_DATE)
-
+# glimpse(ks)
 
 
 # select variables of interest
 # filter for tabletop games
-# convert the USD variables to numeric values
-# filter for games whose goal was <= $50,000 USD to cut most extreme outliers
+# convert the USD strings variables to numeric values
+# convert date strings in US format (m-d-y) to date values
+# add columns for month and year for easy analysis
+# simplify state to binary successful | not successful
+# add column for success binary
+# filter for games whose goal was <= $250,000 USD to cut most extreme outliers
+# filter out the observations with NA launch data from previous conversion
 games <- ks |>
   select(CASEID, SUBCATEGORY, GOAL_IN_USD:LAUNCHED_DATE, STATE) |>
   filter(SUBCATEGORY == 34) |>
@@ -35,15 +35,14 @@ games <- ks |>
   filter(!is.na(LAUNCHED_DATE))
 
 
-
 glimpse(games)
 
 
 # there are some extreme outliers in goal
-games |>
-  ggplot(aes(x = STATE, y = GOAL_IN_USD)) +
-  geom_boxplot()
-
+# games |>
+#  ggplot(aes(x = STATE, y = GOAL_IN_USD)) +
+#  geom_boxplot()
+#
 # games |>
 #   ggplot(aes(x = GOAL_IN_USD)) +
 #   geom_density() +
@@ -57,7 +56,7 @@ games |>
   geom_bar()
 
 
-# success rate for tabletop games seeking <= $50,000 USD is increasing
+# success rate for tabletop games seeking <= $250,000 USD is increasing
 games |>
   group_by(LAUNCH_YEAR) |>
   summarize(SUCCESS_RATE = mean(SUCCEEDED)) |>
@@ -126,3 +125,11 @@ games |>
       "$100,000s"
     )
   )
+
+
+# Correlation between the amount pledged and the amount asked for:
+# linear for successful campaigns and sigmoidal for failed campaigns
+games |>
+  ggplot(aes(x = log10(GOAL_IN_USD), y = log10(PLEDGED_IN_USD))) +
+  geom_point(aes(color = STATE)) +
+  geom_smooth(aes(color = STATE))
