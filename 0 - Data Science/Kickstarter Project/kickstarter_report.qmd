@@ -10,15 +10,217 @@ format:
 ---
 
 # Goals of the Report
-My goal with this report is two-fold. First, I want to get a feeling for how often RPGs get funded and for how much. Second, I want to practice data analysis with a proper project. 
+My goal with this report is two-fold. First, I want to get a feeling for how often tabletop games get funded and for how much. Second, I want to practice exploratory data analysis with a proper project. 
 
 # The Dataset
-The dataset that I'll be using for the analysis was created by the Inter-university Consortium for Political and Social Research (ICPSR). It contains data on Kickstarter projects from 2009 to 2023.
+The dataset that I'll be using for the analysis was created by the Inter-university Consortium for Political and Social Research (ICPSR). 
 
 ```{r}
 library(tidyverse)
 
-ks1 <- read_tsv("0 - Data Science/38050-0001-Data.tsv")
-glimpse(ks1)
+ks <- read_tsv("0 - Data Science/Kickstarter Project/38050-0001-Data.tsv")
+glimpse(ks)
 ```
 
+The dataset contains data on Kickstarter projects from 2009 to 2023, and it captures the following variables: CASEID, NAME, PID, CATEGORY, SUBCATEGORY, PROJECT_PAGE_LOCATION_NAME, PROJECT_PAGE_LOCATION_STATE, PROJECT_PAGE_LOCATION_COUNTY, PROJECT_PAGE_LOCATION_COUNTRY, UID, PROJECT_CURRENCY, GOAL_IN_ORIGINAL_CURRENCY, PLEDGED_IN_ORIGINAL_CURRENCY, GOAL_IN_USD, PLEDGED_IN_USD, BACKERS_COUNT, LAUNCHED_DATE, DEADLINE_DATE, STATE, URL_NAME. Of these, we're interested in working with CASEID, SUBCATEGORY, GOAL_IN_USD, PLEDGED_IN_USD, BACKERS_COUNT, LAUNCHED_DATE, and STATE. For subcategory, we'll specifically filter for tabletop games, which are represented by subcategory 34.
+
+```{r}
+games <- ks |>
+  select(CASEID, SUBCATEGORY, GOAL_IN_USD:LAUNCHED_DATE, STATE) |>
+  filter(SUBCATEGORY == 34)
+```
+
+The dataset is already in a tidy format, where each column represents a variable and each row represents a single observation of those variables, so the amount of cleaning we need to do is minimal.
+
+
+## Cleaning the Dataset
+The first thing we notice is that GOAL_IN_USD and PLEDGED_IN_USD are both strings, not numeric values. We need to fix this so that the money amounts are ordered. We need our software to know that $100 is less than $1,000 to be able to investigate some of the possible correlations we're interested in. We'll also want to extract the log scale of the campaign goals. The range of goals is huge, so this will make some of our later analyses easier. Lastly, we'll filter out those campaigns with very small and very large goals. These outliers are of limited interest to our current analysis.
+
+```{r}
+games <- games |>
+  mutate(
+    GOAL_IN_USD = as.numeric(str_remove_all(str_sub(GOAL_IN_USD, 2, -1), ",")),
+    PLEDGED_IN_USD = as.numeric(str_remove_all(str_sub(PLEDGED_IN_USD, 2, -1), ",")),
+    GOAL_SCALE = floor(log10(GOAL_IN_USD))
+  ) |>
+  filter(GOAL_IN_USD >= 100 & GOAL_IN_USD <= 250000)
+```
+
+Next we want to convert LAUNCH_DATE from a string to a date type and extract the year and month into their own columns. Because there are some dates that are in date formats other than m/d/y, we also need to filter out the rows where LAUNCH_DATE has been transformed to NA.
+
+```{r}
+games <- games |>
+  mutate(
+    LAUNCHED_DATE = mdy(LAUNCHED_DATE),
+    LAUNCH_YEAR = year(LAUNCHED_DATE),
+    LAUNCH_MONTH = month(LAUNCHED_DATE),
+  ) |>
+  filter(!is.na(LAUNCHED_DATE))
+```
+
+Lastly, we want to construct two new columns: one that captures whether the campaign succeeded or not, and one that captures the average donation for the campaign. For the first, we'll use the STATE column and map every state that's not "successful" to False and the "successful" states to True. For the second, we'll take the amount pledged and divide it by the number of backers, but if the number of backers is 0 we'll default the avg donations amount to 0.
+
+```{r}
+games <- games |>
+  mutate(
+    SUCCEEDED = case_when(
+      STATE == "successful" ~ TRUE,
+      .default = FALSE
+    ),
+    AVG_DONATION = case_when(
+      BACKERS_COUNT != 0 ~ PLEDGED_IN_USD / BACKERS_COUNT,
+      .default = 0
+    ),
+  )
+```
+
+```{r}
+glimpse(games)
+```
+
+## Visualizing the Data
+
+```{r}
+# total number of campaigns per year is increasing
+games |>
+  ggplot(aes(x = LAUNCH_YEAR, fill = STATE)) +
+  geom_bar()
+```
+
+
+
+```{r}
+# success rate for tabletop games seeking <= $250,000 USD is increasing
+games |>
+  group_by(LAUNCH_YEAR) |>
+  summarize(SUCCESS_RATE = mean(SUCCEEDED)) |>
+  ggplot(aes(x = LAUNCH_YEAR, y = SUCCESS_RATE)) +
+  geom_point() +
+  geom_line()
+```
+
+
+
+```{r}
+# success rate for tabletop games seeking <= $50,000 USD
+# is highest when launched in Jan, Feb, Mar, or Sep
+games |>
+  group_by(LAUNCH_MONTH) |>
+  summarize(SUCCESS_RATE = mean(SUCCEEDED)) |>
+  ggplot(aes(x = LAUNCH_MONTH, y = SUCCESS_RATE)) +
+  geom_point() +
+  geom_line() +
+  scale_x_discrete(
+    name = "Month",
+    limits = c(
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    )
+  )
+```
+
+
+
+```{r}
+# Success rate goes down as goal goes up
+games |>
+  group_by(GOAL_IN_USD) |>
+  summarize(SUCCESS_RATE = mean(SUCCEEDED)) |>
+  ggplot(aes(x = GOAL_IN_USD, y = SUCCESS_RATE)) +
+  geom_point() +
+  geom_smooth()
+
+games |>
+  ggplot(aes(x = GOAL_SCALE, fill = STATE)) +
+  geom_histogram()
+
+games |>
+  group_by(GOAL_SCALE) |>
+  summarize(SUCCESS_RATE = mean(SUCCEEDED))
+
+games |>
+  group_by(GOAL_SCALE) |>
+  summarize(SUCCESS_RATE = mean(SUCCEEDED)) |>
+  ggplot(aes(x = GOAL_SCALE, y = SUCCESS_RATE)) +
+  geom_point() +
+  geom_line() +
+  scale_x_discrete(
+    name = "Amount Asked For",
+    limits = c(
+      "",
+      "$100s",
+      "$1,000s",
+      "$10,000s",
+      "$100,000s"
+    )
+  )
+```
+
+
+
+```{r}
+# Correlation between the amount pledged and the amount asked for:
+# linear for successful campaigns and sigmoidal for failed campaigns
+games |>
+  ggplot(aes(x = log10(GOAL_IN_USD), y = log10(PLEDGED_IN_USD))) +
+  geom_point(aes(color = SUCCEEDED)) +
+  geom_smooth(aes(color = SUCCEEDED))
+```
+
+
+
+```{r}
+# What is the average donation for successful/failed campaigns
+games |>
+  group_by(SUCCEEDED) |>
+  summarize(
+    donation_mean = mean(AVG_DONATION),
+    donation_median = median(AVG_DONATION)
+  )
+
+
+games |>
+  ggplot(aes(x = STATE, y = AVG_DONATION)) +
+  geom_boxplot()
+
+games |>
+  ggplot(aes(x = AVG_DONATION)) +
+  geom_density()
+
+games |>
+  ggplot(aes(x = PLEDGED_IN_USD, y = AVG_DONATION)) +
+  geom_point(aes(color = STATE)) +
+  geom_smooth(aes(color = STATE))
+```
+
+
+
+```{r}
+# How many backers for successful/failed campaigns
+games |>
+  group_by(SUCCEEDED) |>
+  summarize(
+    num_backers_mean = mean(BACKERS_COUNT),
+    num_backers_median = median(BACKERS_COUNT)
+  )
+
+games |>
+  ggplot(aes(GOAL_IN_USD, y = BACKERS_COUNT)) +
+  geom_point() +
+  geom_smooth()
+```
+
+
+
+```{r}
+```
