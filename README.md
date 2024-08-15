@@ -29,6 +29,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- *Reality Rules vol. I, II* by John L. Casti
 - **Manifolds**: 
 	- *Introduction to Smooth Manifolds* by John M. Lee
+	- *Elementary Applied Topology* by Robert Ghrist
 - **Physics**: 
 	- *Physics from Symmetry* by Jakob Schwichtenberg
 	- *Mathematical Physics* by Robert Geroch
@@ -36,6 +37,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- *Philosophy of Physics: Space and Time* by Tim Maudlin
 - **Algebraic Topology**: 
 	- *Algebraic Topology* by Allen Hatcher
+	- *Elementary Applied Topology* by Robert Ghrist
 - **Biology**:
 	- *How Life Works* by Phillip Ball
 	- *Applications of Automata Theory and Algebra* by John Rhodes
