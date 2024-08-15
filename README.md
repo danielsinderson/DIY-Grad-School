@@ -24,6 +24,8 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- *Linear Algebra Done Right* by Sheldon Axler
 	- *Understanding Analysis* by Stephen Abbott
 	- *Topology: A Categorical Approach* by Tai-Danae Bradley, Tyler Bryson, and John Terilla
+	- *Algebra* by Thomas Hungerford
+	- *Elements of Abstract Algebra* by Allan Clark
 - **Systems Science**: 
 	- *Elements and Relations* by Martin Zwick
 	- *Reality Rules vol. I, II* by John L. Casti
@@ -44,6 +46,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- *Life Itself* by Robert Rosen
 	- *Philosophy of Biology* by Peter Godfrey-Smith
 - **Category Theory**: 
+	- *The Joy of Abstraction* by Eugenia Cheng
 	- *Category Theory in Context* by Emily Riehl
 	- *Seven Sketches in Compositionality* by Brendan Fong and David Spivak
 	- *Polynomial Functors: A Mathematical Theory of Interaction* by David Spivak and Nelson Niu
