@@ -59,12 +59,9 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- [ ] *Category Theory for Programmers* by Bartosz Milewski
 	- [ ] *Universal Algebra and Coalgebra* by Klaus Denecke and Shelly L. Wismath
 
-	
-	
-
-
-For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author(s).
+For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author(s). Also, everything here is tentative. As things progress I may switch up the schedule, change texts, or even alter the courses. 
 
 # Guidelines
-- 14 hours per week
+- 10 hours per week
 - Readings will be accompanied by substantial notes on the topics covered, completion of 50% or more of the provided exercises, and the creation of flashcards for spaced repetition
+- Summers should be kept free to give myself a break to focus on other things, giving a timeline to complete the curriculum in a little over 5 years
