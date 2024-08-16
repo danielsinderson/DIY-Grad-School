@@ -7,51 +7,59 @@ I've designed my own course of advanced study for two reasons. The first is that
 
 |Progress in Months| Track 1                    | Track 2                     |
 | ---------------- | -------------------------- | --------------------------- |
-| 2/3              | Data Science               | Computer Science            |
+| 2/3              | Data Science               | Computer Science I          |
 | 0/9              | Fundamentals: Algebra      | Fundamentals: Analysis      |
 | 0/9              | Manifolds                  | Physics                     |
 | 0/9              | Algebraic Topology         | Biology                     |
-| 0/9              | Category Theory            | Social and Systems Science  |
+| 0/9              | Systems Theory             | Social Science              |
+| 0/9              | Category Theory            | Computer Science II         |
 
 ## Texts
 - **Data Science**: 
-	- *R for Data Science* by Hadley Wickham, Mine Centinkaya-Rundel, Garrett Grolemund
-	- *Statistical Rethinking* by Richard McElreath
+	- [x] *R for Data Science* by Hadley Wickham, Mine Centinkaya-Rundel, Garrett Grolemund
+	- [ ] *Statistical Rethinking* by Richard McElreath
 - **Computer Science**: 
-	- *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
-	- *Program == Proof* by Samuel Mimram
+	- [x] *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 - **Fundamentals: Algebra**: 
-	- *Linear Algebra Done Right* by Sheldon Axler
-	- *Abstract Algebra* by David Dummet and Richard Foote
+	- [ ] *Linear Algebra Done Right* by Sheldon Axler
+	- [ ] *Abstract Algebra* by David Dummet and Richard Foote
 - **Fundamentals: Analysis**: 
-	- *Understanding Analysis* by Stephen Abbott
-	- *Introductory Functional Analysis* by Erwin Kreysig
-	- *Topology: A Categorical Approach* by Tai-Danae Bradley, Tyler Bryson, and John Terilla
+	- [ ] *Understanding Analysis* by Stephen Abbott
+	- [ ] *Introductory Functional Analysis* by Erwin Kreysig
+	- [ ] *Topology: A Categorical Approach* by Tai-Danae Bradley, Tyler Bryson, and John Terilla
 - **Manifolds**: 
-	- *Introduction to Smooth Manifolds* by John M. Lee
-	- *Elementary Applied Topology* by Robert Ghrist
+	- [ ] *Introduction to Smooth Manifolds* by John M. Lee
+	- [ ] *Elementary Applied Topology* by Robert Ghrist
 - **Physics**: 
-	- *Physics from Symmetry* by Jakob Schwichtenberg
-	- *Mathematical Physics* by Robert Geroch
-	- *Philosophy of Physics: Quantum Theory* by Tim Maudlin
-	- *Philosophy of Physics: Space and Time* by Tim Maudlin
+	- [ ] *Physics from Symmetry* by Jakob Schwichtenberg
+	- [ ] *Mathematical Physics* by Robert Geroch
+	- [ ] *Philosophy of Physics: Quantum Theory* by Tim Maudlin
+	- [ ] *Philosophy of Physics: Space and Time* by Tim Maudlin
 - **Algebraic Topology**: 
-	- *Algebraic Topology* by Allen Hatcher
-	- *Elementary Applied Topology* by Robert Ghrist
+	- [ ] *Algebraic Topology* by Allen Hatcher
+	- [ ] *Elementary Applied Topology* by Robert Ghrist
 - **Biology**:
-	- *How Life Works* by Phillip Ball
-	- *Applications of Automata Theory and Algebra* by John Rhodes
-	- *Life Itself* by Robert Rosen
-	- *Philosophy of Biology* by Peter Godfrey-Smith
+	- [ ] *How Life Works* by Phillip Ball
+	- [ ] *Applications of Automata Theory and Algebra* by John Rhodes
+	- [ ] *Life Itself* by Robert Rosen
+	- [ ] *Philosophy of Biology* by Peter Godfrey-Smith
+- **Systems Theory**:
+	- [ ] *Elements and Relations* by Martin Zwick
+	- [ ] *Reality Rules vol. I, II* by John L. Casti
+- **Social Science**:
+	- [ ] *Introduction to Mathematical Sociology* by Phillip Bonacich and Philip Lu
+	- [ ] *Foundations of Social Theory* James S. Coleman
+	- [ ] *The Logic of Social Science* by James Mahoney
 - **Category Theory**: 
-	- *Seven Sketches in Compositionality* by Brendan Fong and David Spivak
-	- *Polynomial Functors: A Mathematical Theory of Interaction* by David Spivak and Nelson Niu
-	- *Categorical Systems Theory* by David Jaz Myers
-- **Social and Systems Science**:
-	- *Introduction to Mathematical Sociology* by Phillip Bonacich and Philip Lu
-	- *The Logic of Social Science* by James Mahoney
-	- *Elements and Relations* by Martin Zwick
-	- *Reality Rules vol. I, II* by John L. Casti
+	- [ ] *Seven Sketches in Compositionality* by Brendan Fong and David Spivak
+	- [ ] *Polynomial Functors: A Mathematical Theory of Interaction* by David Spivak and Nelson Niu
+	- [ ] *Categorical Systems Theory* by David Jaz Myers
+- **Computer Science II**:
+	- [ ] *Program == Proof* by Samuel Mimram
+	- [ ] *Category Theory for Programmers* by Bartosz Milewski
+	- [ ] *Universal Algebra and Coalgebra* by Klaus Denecke and Shelly L. Wismath
+
+	
 	
 
 
