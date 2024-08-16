@@ -5,13 +5,13 @@ I've designed my own course of advanced study for two reasons. The first is that
 
 # Curriculum
 
-| Track 1                   | Track 2          |
-| ------------------------- | ---------------- |
-| Data Science              | Computer Science |
-| Mathematical Fundamentals | Systems Science  |
-| Manifolds                 | Physics          |
-| Algebraic Topology        | Biology          |
-| Category Theory           | Social Science   |
+|Progress in Months| Track 1                    | Track 2                     |
+| ---------------- | -------------------------- | --------------------------- |
+| 2/3              | Data Science               | Computer Science            |
+| 0/9              | Fundamentals: Algebra      | Fundamentals: Analysis      |
+| 0/9              | Manifolds                  | Physics                     |
+| 0/9              | Algebraic Topology         | Biology                     |
+| 0/9              | Category Theory            | Social and Systems Science  |
 
 ## Texts
 - **Data Science**: 
@@ -20,15 +20,13 @@ I've designed my own course of advanced study for two reasons. The first is that
 - **Computer Science**: 
 	- *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 	- *Program == Proof* by Samuel Mimram
-- **Mathematical Fundamentals**: 
+- **Fundamentals: Algebra**: 
 	- *Linear Algebra Done Right* by Sheldon Axler
+	- *Abstract Algebra* by David Dummet and Richard Foote
+- **Fundamentals: Analysis**: 
 	- *Understanding Analysis* by Stephen Abbott
+	- *Introductory Functional Analysis* by Erwin Kreysig
 	- *Topology: A Categorical Approach* by Tai-Danae Bradley, Tyler Bryson, and John Terilla
-	- *Algebra* by Thomas Hungerford
-	- *Elements of Abstract Algebra* by Allan Clark
-- **Systems Science**: 
-	- *Elements and Relations* by Martin Zwick
-	- *Reality Rules vol. I, II* by John L. Casti
 - **Manifolds**: 
 	- *Introduction to Smooth Manifolds* by John M. Lee
 	- *Elementary Applied Topology* by Robert Ghrist
@@ -46,13 +44,15 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- *Life Itself* by Robert Rosen
 	- *Philosophy of Biology* by Peter Godfrey-Smith
 - **Category Theory**: 
-	- *The Joy of Abstraction* by Eugenia Cheng
-	- *Category Theory in Context* by Emily Riehl
 	- *Seven Sketches in Compositionality* by Brendan Fong and David Spivak
 	- *Polynomial Functors: A Mathematical Theory of Interaction* by David Spivak and Nelson Niu
-- **Social Science**:
+	- *Categorical Systems Theory* by David Jaz Myers
+- **Social and Systems Science**:
 	- *Introduction to Mathematical Sociology* by Phillip Bonacich and Philip Lu
 	- *The Logic of Social Science* by James Mahoney
+	- *Elements and Relations* by Martin Zwick
+	- *Reality Rules vol. I, II* by John L. Casti
+	
 
 
 For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author(s).
