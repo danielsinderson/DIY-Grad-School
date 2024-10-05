@@ -5,7 +5,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 
 # Curriculum
 
-## Mathematics
+Mathematics
 - **Abstract Linear Algebra**
 	- [ ] *Linear Algebra Done Right* by Sheldon Axler
 	- [ ] [lectures](https://www.youtube.com/playlist?list=PLGAnmvB9m7zOBVCZBUUmSinFV0wEir2Vw)
@@ -27,7 +27,7 @@ I've designed my own course of advanced study for two reasons. The first is that
 	- [ ] *Introduction to Smooth Manifolds* by John M. Lee
 
 
-## Everything Else
+Everything Else
 - **Computer Science**
 	- [x] *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 	- [ ] *Program == Proof* by Samuel Mimram
