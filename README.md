@@ -22,6 +22,7 @@ Mathematics
 	- [ ] [lectures](https://www.youtube.com/playlist?list=PLd8NbPjkXPliJunBhtDNMuFsnZPeHpm-0)
 - **Algebraic Topology**
 	- [ ] *Algebraic Topology* by Allen Hatcher
+	- [ ] [lectures](https://www.youtube.com/playlist?list=PLOROtRhtegr7DmeMyFxfKxsljAVsAn_X4)
 	- [ ] *Elementary Applied Topology* by Robert Ghrist
 - **Differential Topology**
 	- [ ] *Introduction to Smooth Manifolds* by John M. Lee
@@ -32,6 +33,7 @@ Everything Else
 	- [x] *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 	- [ ] *Program == Proof* by Samuel Mimram
 	- [ ] *Category Theory for Programmers* by Bartosz Milewski
+	- [ ] [lectures](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_)
 - **Statistics**
 	- [x] *R for Data Science* by Hadley Wickham, Mine Centinkaya-Rundel, Garrett Grolemund
 	- [ ] *Statistical Rethinking* by Richard McElreath
