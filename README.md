@@ -1,67 +1,56 @@
 
 # Why?
-I've designed my own course of advanced study for two reasons. The first is that a standard PhD program isn't an option: fellowships don't pay enough to support a family. The second is that my ideal course of study straddles the line between mathematics, philosophy, and the sciences in a way that's difficult to capture within a traditional graduate program.
+I've designed my own course of advanced study for two reasons. The first is that a standard PhD program isn't an option: fellowships don't pay enough to support a family. The second is that my ideal course of study straddles the line between mathematics, philosophy, and the sciences in a way that's difficult to capture within a traditional graduate program. It's a generalist's curriculum rather than a specialist's.
 
 
 # Curriculum
 
-|Progress in Months| Track 1                    | Track 2                     |
-| ---------------- | -------------------------- | --------------------------- |
-| 2/3              | Data Science               | Computer Science I          |
-| 0/9              | Fundamentals: Algebra      | Fundamentals: Analysis      |
-| 0/9              | Manifolds                  | Physics                     |
-| 0/9              | Algebraic Topology         | Biology                     |
-| 0/9              | Systems Theory             | Social Science              |
-| 0/9              | Category Theory            | Computer Science II         |
+## Mathematics
+- **Abstract Linear Algebra**
+	- [ ] *Linear Algebra Done Right* by Sheldon Axler
+	- [ ] [lectures](https://www.youtube.com/playlist?list=PLGAnmvB9m7zOBVCZBUUmSinFV0wEir2Vw)
+- **Real Analysis**
+	- [ ] *Understanding Analysis* by Stephen Abbott
+	- [ ] [lectures](https://www.youtube.com/playlist?list=PLLFpXNanTP9WGfbjxR5kCMXQgol4bGehz)
+- **Abstract Algebra**
+	- [ ] *Algebra* by Michael Artin
+	- [ ] [lectures](https://www.youtube.com/playlist?list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5)
+- **Functional Analysis**
+	- [ ] *Introductory Functional Analysis* by Erwin Kreysig
+- **Topology**
+	- [ ] *Introduction to Topological Manifolds* by John M. Lee
+	- [ ] [lectures](https://www.youtube.com/playlist?list=PLd8NbPjkXPliJunBhtDNMuFsnZPeHpm-0)
+- **Algebraic Topology**
+	- [ ] *Algebraic Topology* by Allen Hatcher
+	- [ ] *Elementary Applied Topology* by Robert Ghrist
+- **Differential Topology**
+	- [ ] *Introduction to Smooth Manifolds* by John M. Lee
 
-## Texts
-- **Data Science**: 
+
+## Everything Else
+- **Computer Science**
+	- [x] *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
+	- [ ] *Program == Proof* by Samuel Mimram
+	- [ ] *Category Theory for Programmers* by Bartosz Milewski
+- **Statistics**
 	- [x] *R for Data Science* by Hadley Wickham, Mine Centinkaya-Rundel, Garrett Grolemund
 	- [ ] *Statistical Rethinking* by Richard McElreath
-- **Computer Science**: 
-	- [x] *Structure and Interpretation of Computer Programs* by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
-- **Fundamentals: Algebra**: 
-	- [ ] *Linear Algebra Done Right* by Sheldon Axler
-	- [ ] *Abstract Algebra* by David Dummet and Richard Foote
-- **Fundamentals: Analysis**: 
-	- [ ] *Understanding Analysis* by Stephen Abbott
-	- [ ] *Introductory Functional Analysis* by Erwin Kreysig
-	- [ ] *Topology: A Categorical Approach* by Tai-Danae Bradley, Tyler Bryson, and John Terilla
-- **Manifolds**: 
-	- [ ] *Introduction to Smooth Manifolds* by John M. Lee
-	- [ ] *Elementary Applied Topology* by Robert Ghrist
-- **Physics**: 
+	- [ ] [lectures](https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)
+- **Physics**
 	- [ ] *Physics from Symmetry* by Jakob Schwichtenberg
 	- [ ] *Mathematical Physics* by Robert Geroch
 	- [ ] *Philosophy of Physics: Quantum Theory* by Tim Maudlin
 	- [ ] *Philosophy of Physics: Space and Time* by Tim Maudlin
-- **Algebraic Topology**: 
-	- [ ] *Algebraic Topology* by Allen Hatcher
-	- [ ] *Elementary Applied Topology* by Robert Ghrist
-- **Biology**:
+- **Biology**
 	- [ ] *How Life Works* by Phillip Ball
 	- [ ] *Applications of Automata Theory and Algebra* by John Rhodes
 	- [ ] *Life Itself* by Robert Rosen
 	- [ ] *Philosophy of Biology* by Peter Godfrey-Smith
-- **Systems Theory**:
-	- [ ] *Elements and Relations* by Martin Zwick
-	- [ ] *Reality Rules vol. I, II* by John L. Casti
-- **Social Science**:
-	- [ ] *Introduction to Mathematical Sociology* by Phillip Bonacich and Philip Lu
-	- [ ] *Foundations of Social Theory* James S. Coleman
+- **Social Science** (texts TBD)
 	- [ ] *The Logic of Social Science* by James Mahoney
-- **Category Theory**: 
-	- [ ] *Seven Sketches in Compositionality* by Brendan Fong and David Spivak
-	- [ ] *Polynomial Functors: A Mathematical Theory of Interaction* by David Spivak and Nelson Niu
-	- [ ] *Categorical Systems Theory* by David Jaz Myers
-- **Computer Science II**:
-	- [ ] *Program == Proof* by Samuel Mimram
-	- [ ] *Category Theory for Programmers* by Bartosz Milewski
-	- [ ] *Universal Algebra and Coalgebra* by Klaus Denecke and Shelly L. Wismath
+- **Systems Science** (texts TBD)
+	- [ ] *Elements and Relations* by Martin Zwick
 
-For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author(s). Also, everything here is tentative. As things progress I may switch up the schedule, change texts, or even alter the courses. 
 
-# Guidelines
-- 10 hours per week
-- Readings will be accompanied by substantial notes on the topics covered, completion of 50% or more of the provided exercises, and the creation of flashcards for spaced repetition
-- Summers should be kept free to give myself a break to focus on other things, giving a timeline to complete the curriculum in a little over 5 years
+
+For course texts I tried to balance readability, coverage, and the availability/price. It's extraordinary how many of these texts are made available for free by the author(s). Also, everything here is tentative. As things progress I may switch up the schedule, change texts, or even alter the courses.
