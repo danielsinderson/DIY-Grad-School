@@ -15,17 +15,20 @@ Mathematics
 - **Abstract Algebra**
 	- [ ] *Algebra* by Michael Artin
 	- [ ] [lectures](https://www.youtube.com/playlist?list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5)
-- **Functional Analysis**
-	- [ ] *Introductory Functional Analysis* by Erwin Kreysig
+- **Measure Theory**
+	- [ ] *Measures, Integrals and Martingales* by Rene Schilling
 - **Topology**
 	- [ ] *Introduction to Topological Manifolds* by John M. Lee
 	- [ ] [lectures](https://www.youtube.com/playlist?list=PLd8NbPjkXPliJunBhtDNMuFsnZPeHpm-0)
+- **Functional Analysis**
+	- [ ] *Applied Nonlinear Functional Analysis: An Introduction* by Nikolaos S. Papageorgiou and Patrick Winkert
 - **Algebraic Topology**
 	- [ ] *Algebraic Topology* by Allen Hatcher
 	- [ ] [lectures](https://www.youtube.com/playlist?list=PLOROtRhtegr7DmeMyFxfKxsljAVsAn_X4)
 	- [ ] *Elementary Applied Topology* by Robert Ghrist
 - **Differential Topology**
 	- [ ] *Introduction to Smooth Manifolds* by John M. Lee
+	
 
 
 Everything Else
@@ -38,6 +41,8 @@ Everything Else
 	- [x] *R for Data Science* by Hadley Wickham, Mine Centinkaya-Rundel, Garrett Grolemund
 	- [ ] *Statistical Rethinking* by Richard McElreath
 	- [ ] [lectures](https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)
+	- [ ] *Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R* by Paul Roback and Julie Legler
+	- [ ] *Time Series Analysis and its Applications: Examples in R* by Robert H. Shumway and David S. Stoffer
 - **Physics**
 	- [ ] *Physics from Symmetry* by Jakob Schwichtenberg
 	- [ ] *Mathematical Physics* by Robert Geroch
