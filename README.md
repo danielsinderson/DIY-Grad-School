@@ -9,14 +9,14 @@ The next years will be a lot more free-form, but generally focused on formal the
 # Curriculum
 
 Year One: Foundations of Applied Mathematics
-- [Mathematical Analysis](/posts/DIYphd-1A-analysis)
-- [Algebraic Structures and Composition](/posts/DIYphd-1B-algebraic-structures)
-- [Algorithms and Optimization](/posts/DIYphd-1C-algorithms)
+- [Mathematical Analysis](https://www.danielsinderson.com/posts/DIYphd-1A-analysis)
+- [Algebraic Structures and Composition](https://www.danielsinderson.com/posts/DIYphd-1B-algebraic-structures)
+- [Algorithms and Optimization](https://www.danielsinderson.com/posts/DIYphd-1C-algorithms)
 
 Year Two: Modeling with Mathematics
-- [Modeling with Dynamics and Control](/posts/DIYphd-2A-modeling-with-dynamics)
-- [Modeling with Structure and Composition](/posts/DIYphd-2B-modeling-with-structure)
-- [Modeling with Data and Uncertainty](/posts/DIYphd-2C-modeling-with-data)
+- [Modeling with Dynamics and Control](https://www.danielsinderson.com/posts/DIYphd-2A-modeling-with-dynamics)
+- [Modeling with Structure and Composition](https://www.danielsinderson.com/posts/DIYphd-2B-modeling-with-structure)
+- [Modeling with Data and Uncertainty](https://www.danielsinderson.com/posts/DIYphd-2C-modeling-with-data)
 
 Year Three+: Formal Theories in Science, Philosophy, and Systems Design
-- [Reading List](/posts/DIYphd-3-reading-list)
+- [Reading List](https://www.danielsinderson.com/posts/DIYphd-3-reading-list)
